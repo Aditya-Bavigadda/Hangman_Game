@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C2D116E-3C82-4278-9F85-8344FA4D5C08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Hangman_Starting_Page.My.MyApplication</StartupObject>
+    <RootNamespace>Hangman_Starting_Page</RootNamespace>
+    <AssemblyName>Hangman_Starting_Page</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Hangman_Starting_Page.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Hangman_Starting_Page.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChooseYourTopic.Designer.vb">
+      <DependentUpon>ChooseYourTopic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseYourTopic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="variablestorer.vb" />
+    <Compile Include="Hangman_game_1.Designer.vb">
+      <DependentUpon>Hangman_game_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hangman_game_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geographychooseyourcharacter.Designer.vb">
+      <DependentUpon>Geographychooseyourcharacter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Geographychooseyourcharacter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartingPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartingPage.Designer.vb">
+      <DependentUpon>StartingPage.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.vb">
+      <DependentUpon>Instructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="chooseyourtopic.resx">
+      <DependentUpon>ChooseYourTopic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hangman_game_1.resx">
+      <DependentUpon>Hangman_game_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geographychooseyourcharacter.resx">
+      <DependentUpon>Geographychooseyourcharacter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartingPage.resx">
+      <DependentUpon>StartingPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HangmanName.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title page - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hangman_game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question mark1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_screen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sample_game_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sample_game_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sample_game_2%28real one%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sample_game_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chooseyourtopicgeography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chooseyourtopichistory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chooseyourtopicscience.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chooseyourtopictemplate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chooseyourtopictext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chooseyourtopicarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterselectionchoosevictim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterselectionchooseearthman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterselectionchoosebeardman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterselectionchoosebaldman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamestandalone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lettercover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templategame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baldmanblank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blankedoutgeohangman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blankoutgeohangmanreal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spikehairedmanblank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you lost page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you won page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitgame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainmenubutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagwithcount1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagwithcount2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagwithcount3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectlieflag.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
